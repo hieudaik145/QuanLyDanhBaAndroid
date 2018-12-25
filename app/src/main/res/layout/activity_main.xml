@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="1,2,3"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+        <TableRow android:background="#56ca0c">
+            <TextView android:text="Ôn Tập Android"
+                android:textSize="20dp"
+                android:layout_span="3"
+                android:textColor="#ffffff"
+            android:layout_gravity="center"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="82dp"
+                android:text="Họ Tên" />
+            <EditText android:id="@+id/edithoten" android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Số ĐT:"/>
+            <EditText android:id="@+id/editsdt" android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Nhập Ngày Sinh"/>
+            <EditText android:id="@+id/editngaysinh"
+                android:hint="dd/MM/yyyy" android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <RadioGroup android:orientation="horizontal" android:layout_span="3">
+
+                <RadioButton
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nam" android:id="@+id/rbnam" />
+
+                <RadioButton
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ" android:id="@+id/rbnu" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <Button android:text="Thêm"
+                android:id="@+id/btnthem"/>
+            <Button android:text="Xóa Trắng" android:id="@+id/btnxoatrang"/>
+            <Button android:text="Load data"  android:id="@+id/btnloaddata"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="Search" android:id="@+id/btnsearch"/>
+            <EditText android:hint="Nhập Search..."
+                android:id="@+id/editsearch" android:layout_span="2"/>
+        </TableRow>
+        <ListView android:id="@+id/lvdata">
+
+        </ListView>
+    </TableLayout>
